@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------
                          Thank you for downloading :)
 
-Version: 1.13
+Version: 1.2.0
 Requires Morrowind patched to the latest version.
 
 ===========
@@ -18,12 +18,12 @@ need the key. The key is inside a sack, and the sack can be found in amonsgt the
 front door.
 
 ===============
-Updating to 1.13
+Updating to 1.2.0
 ===============
 
 IF YOU HAVE ALREADY BEEN INSIDE THE HOUSE:
 
-Perform a clean save first, then update to v1.13
+Perform a clean save first, then update to v1.2.0
 
 OTHERWISE:
 
@@ -68,6 +68,7 @@ you find any.
 History
 =======
 
+1.2.0 - Moved exterior sack to be closer to the house
 1.13 - Added a few more flasks to the limeware platter
      - Added a small plant area next to the front door
      - Added a dirt path right in front of the door (thanks to johanrosen for all of these)
