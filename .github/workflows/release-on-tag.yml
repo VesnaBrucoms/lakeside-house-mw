@@ -21,6 +21,7 @@ jobs:
       - name: Package mod
         run: |
           cd '${{ github.workspace }}/Data Files/' && zip -r ${{ github.workspace }}/${{ env.ZIPFILE_NAME }}.zip .
+          cd '${{ github.workspace }}/Data Files/' && zip -x README.txt -r ${{ github.workspace }}/${{ env.ZIPFILE_NAME }}-no-readme.zip .
 
       - name: Get tag
         id: tag
@@ -35,5 +36,7 @@ jobs:
       - name: Create Release and Upload
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ env.ZIPFILE_NAME }}.zip
+          files: |
+            ${{ env.ZIPFILE_NAME }}.zip
+            ${{ env.ZIPFILE_NAME }}-no-readme.zip
           tag_name: ${{ steps.tag.outputs.tag }}
