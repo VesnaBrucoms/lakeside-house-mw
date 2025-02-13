@@ -22,7 +22,7 @@ jobs:
       - name: Package mod
         run: |
           cd '${{ github.workspace }}/Data Files/' && zip -r ${{ github.workspace }}/${{ env.ZIPFILE_NAME }}.zip .
-          cd '${{ github.workspace }}/Data Files/' && zip -x ${{ env.README_NAME }}.txt -r ${{ github.workspace }}/${{ env.ZIPFILE_NAME }}-no-readme.zip .
+          cd '${{ github.workspace }}/Data Files/' && zip -x "${{ env.README_NAME }}.txt" -r ${{ github.workspace }}/${{ env.ZIPFILE_NAME }}-no-readme.zip .
 
       - name: Get tag
         id: tag
